@@ -314,30 +314,22 @@ sup {
 
 <h1 id="toc_0">The ExtremeWeather Dataset</h1>
 
-<h3 id="toc_1">TL;DR</h3>
-
-<p><a href="#download">Let Me Download it!</a></p>
-
-<h3 id="toc_2">Using the Data in Your Paper</h3>
-
-<p>To use this data in a paper please cite this paper:</p>
-
-<p><a href="./bibtex_citation.html">ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events</a></p>
-
-<h3 id="toc_3">About the Data</h3>
+<h3 id="toc_1">About the Data</h3>
 
 <p>The data is available as one HDF5 file per year. Each HDF5 file contains two datasets:</p>
 
-<ul>
-<li><p><strong>images</strong></p>
+<h4 id="toc_2">Images</h4>
+
+<p><img src="./variables.jpg" alt=""></p>
 
 <ul>
 <li>  a (1460,16,768,1152) array</li>
 <li>  1460 example images (4 per day, 365 days in the year)</li>
 <li>  16 channels in each image corresponding to the <a href="#variables">following variables</a></li>
 <li>  each channel is 768 x 1152 corresponding to one measurement per 25 square km on earth</li>
-</ul></li>
-<li><p><strong>boxes</strong></p>
+</ul>
+
+<h4 id="toc_3">Boxes</h4>
 
 <ul>
 <li>  a (1460,15,5) array</li>
@@ -359,7 +351,6 @@ sup {
 <p><strong>2</strong>. Extratropical Cyclone</p>
 
 <p><strong>3</strong>. Atmospheric River</p></li>
-</ul></li>
 </ul></li>
 </ul>
 
@@ -436,6 +427,14 @@ sup {
 <p><strong>15</strong>. <em>ZBOT</em></p>
 
 <p>More information as to what each variable means is available <a href="http://www.cesm.ucar.edu/models/cesm1.0/cam/docs/ug5_0/hist_flds_fv_cam5.html">here</a></p>
+
+<h3 id="toc_7">Using the Data in Your Paper</h3>
+
+<p>To use this data in a paper please cite this paper:</p>
+
+<p><a href="https://papers.nips.cc/paper/6932-extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events">ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events</a>, Racah et al., 2017.</p>
+
+<p><a href="./bibtex_citation.html">bibtex link</a></p>
 
 
 

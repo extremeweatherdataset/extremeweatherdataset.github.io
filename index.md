@@ -1,46 +1,38 @@
 # The ExtremeWeather Dataset
 
-### TL;DR
-
-[Let Me Download it!](#download)
-
-
-### Using the Data in Your Paper
-
-To use this data in a paper please cite this paper:
-
-[ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events](./bibtex_citation.html)
-
 ### About the Data
 
 The data is available as one HDF5 file per year. Each HDF5 file contains two datasets:
 
-*   **images**
+#### Images
 
-    *   a (1460,16,768,1152) array
-    *   1460 example images (4 per day, 365 days in the year)
-    *   16 channels in each image corresponding to the [following variables](#variables)
-    *   each channel is 768 x 1152 corresponding to one measurement per 25 square km on earth
-*   **boxes**
+![](./variables.jpg)
 
-    *   a (1460,15,5) array
-    *   1460 examples (4 per day, 365 days in the year)
-    *   15 rows (rows without boxes for that example are filled with -1's)
-    *   each row has 5 elements:
+*   a (1460,16,768,1152) array
+*   1460 example images (4 per day, 365 days in the year)
+*   16 channels in each image corresponding to the [following variables](#variables)
+*   each channel is 768 x 1152 corresponding to one measurement per 25 square km on earth
 
-        *   4 bounding box coordinates + the class
-        *   ymin, xmin, ymax, xmax, class
-        *   y corresponds to the size 768 dimension and the vertical axis when plotted
-        *   x corresponds to the size 1152 dimension and horizontal a
-        *   classes are types of extreme weather events and go from 0 to 3:
+#### Boxes
 
-            **0**. Tropical Depression
+*   a (1460,15,5) array
+*   1460 examples (4 per day, 365 days in the year)
+*   15 rows (rows without boxes for that example are filled with -1's)
+*   each row has 5 elements:
 
-            **1**. Tropical Cyclone
+    *   4 bounding box coordinates + the class
+    *   ymin, xmin, ymax, xmax, class
+    *   y corresponds to the size 768 dimension and the vertical axis when plotted
+    *   x corresponds to the size 1152 dimension and horizontal a
+    *   classes are types of extreme weather events and go from 0 to 3:
 
-            **2**. Extratropical Cyclone
+        **0**. Tropical Depression
 
-            **3**. Atmospheric River
+        **1**. Tropical Cyclone
+
+        **2**. Extratropical Cyclone
+
+        **3**. Atmospheric River
 
 ### Download
 
@@ -80,6 +72,7 @@ The data is available as one HDF5 file per year. Each HDF5 file contains two dat
 
 #### Variable Values:
 
+
 The variables are the 2nd dimension of the "images" dataset in the HDF5 in the following order:
 
 **0**. _PRECT_
@@ -115,4 +108,13 @@ The variables are the 2nd dimension of the "images" dataset in the HDF5 in the f
 **15**. _ZBOT_
 
 More information as to what each variable means is available [here](http://www.cesm.ucar.edu/models/cesm1.0/cam/docs/ug5_0/hist_flds_fv_cam5.html)
+
+
+### Using the Data in Your Paper
+
+To use this data in a paper please cite this paper:
+
+[ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events](https://papers.nips.cc/paper/6932-extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events), Racah et al., 2017.
+
+[bibtex link](./bibtex_citation.html)
 
