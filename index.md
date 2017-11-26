@@ -116,5 +116,5 @@ To use this data in a paper please cite this paper:
 
 [ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events](https://papers.nips.cc/paper/6932-extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events), Racah et al., 2017.
 
-[bibtex link](./bibtex_citation.html)
+[bibtex link](./extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events.bib)
 
