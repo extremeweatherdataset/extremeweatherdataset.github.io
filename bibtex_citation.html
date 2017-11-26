@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>index</title>
+<title>bibtex_citation</title>
 
 
 <style type="text/css">
@@ -312,130 +312,13 @@ sup {
 
 <body>
 
-<h1 id="toc_0">The ExtremeWeather Dataset</h1>
-
-<h3 id="toc_1">TL;DR</h3>
-
-<p><a href="#download">Let Me Download it!</a></p>
-
-<h3 id="toc_2">Using the Data in Your Paper</h3>
-
-<p>To use this data in a paper please cite this paper:</p>
-
-<p><a href="./bibtex_citation.html">ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events</a></p>
-
-<h3 id="toc_3">About the Data</h3>
-
-<p>The data is available as one HDF5 file per year. Each HDF5 file contains two datasets:</p>
-
-<ul>
-<li><p><strong>images</strong></p>
-
-<ul>
-<li>  a (1460,16,768,1152) array</li>
-<li>  1460 example images (4 per day, 365 days in the year)</li>
-<li>  16 channels in each image corresponding to the <a href="#variables">following variables</a></li>
-<li>  each channel is 768 x 1152 corresponding to one measurement per 25 square km on earth</li>
-</ul></li>
-<li><p><strong>boxes</strong></p>
-
-<ul>
-<li>  a (1460,15,5) array</li>
-<li>  1460 examples (4 per day, 365 days in the year)</li>
-<li>  15 rows (rows without boxes for that example are filled with -1&#39;s)</li>
-<li><p>each row has 5 elements:</p>
-
-<ul>
-<li>  4 bounding box coordinates + the class</li>
-<li>  ymin, xmin, ymax, xmax, class</li>
-<li>  y corresponds to the size 768 dimension and the vertical axis when plotted</li>
-<li>  x corresponds to the size 1152 dimension and horizontal a</li>
-<li><p>classes are types of extreme weather events and go from 0 to 3:</p>
-
-<p><strong>0</strong>. Tropical Depression</p>
-
-<p><strong>1</strong>. Tropical Cyclone</p>
-
-<p><strong>2</strong>. Extratropical Cyclone</p>
-
-<p><strong>3</strong>. Atmospheric River</p></li>
-</ul></li>
-</ul></li>
-</ul>
-
-<h3 id="toc_4">Download</h3>
-
-<p><a name="download"></a></p>
-
-<ul>
-<li>  1979: <a href="data/h5data/climo_1979.h5">climo_1979.h5</a> (62 GB)</li>
-<li>  1980: <a href="data/h5data/climo_1980.h5">climo_1980.h5</a> (62 GB)</li>
-<li>  1981: <a href="data/h5data/climo_1981.h5">climo_1981.h5</a> (62 GB)</li>
-<li><p>1982: <a href="data/h5data/climo_1982.h5">climo_1982.h5</a> (62 GB)</p></li>
-<li><p>1984: <a href="data/h5data/climo_1984.h5">climo_1984.h5</a> (62 GB)</p></li>
-<li><p>1985: <a href="data/h5data/climo_1985.h5">climo_1985.h5</a> (62 GB)</p></li>
-<li><p>1986: <a href="data/h5data/climo_1986.h5">climo_1986.h5</a> (62 GB)</p></li>
-<li><p>1987: <a href="data/h5data/climo_1987.h5">climo_1987.h5</a> (62 GB)</p></li>
-<li><p>1988: <a href="data/h5data/climo_1988.h5">climo_1988.h5</a> (62 GB)</p></li>
-<li><p>1989: <a href="data/h5data/climo_1989.h5">climo_1989.h5</a> (62 GB)</p></li>
-<li><p>1990: <a href="data/h5data/climo_1990.h5">climo_1990.h5</a> (62 GB)</p></li>
-<li><p>1991: <a href="data/h5data/climo_1991.h5">climo_1991.h5</a> (62 GB)</p></li>
-<li><p>1992: <a href="data/h5data/climo_1992.h5">climo_1992.h5</a> (62 GB)</p></li>
-<li><p>1993: <a href="data/h5data/climo_1993.h5">climo_1993.h5</a> (62 GB)</p></li>
-<li><p>1994: <a href="data/h5data/climo_1994.h5">climo_1994.h5</a> (62 GB)</p></li>
-<li><p>1995: <a href="data/h5data/climo_1995.h5">climo_1995.h5</a> (62 GB)</p></li>
-<li><p>1996: <a href="data/h5data/climo_1996.h5">climo_1996.h5</a> (62 GB)</p></li>
-<li><p>1997: <a href="data/h5data/climo_1997.h5">climo_1997.h5</a> (62 GB)</p></li>
-<li><p>1998: <a href="data/h5data/climo_1998.h5">climo_1998.h5</a> (62 GB)</p></li>
-<li><p>2000: <a href="data/h5data/climo_2000.h5">climo_2000.h5</a> (62 GB)</p></li>
-<li><p>2001: <a href="data/h5data/climo_2001.h5">climo_2001.h5</a> (62 GB)</p></li>
-<li><p>2002: <a href="data/h5data/climo_2002.h5">climo_2002.h5</a> (62 GB)</p></li>
-<li><p>2003: <a href="data/h5data/climo_2003.h5">climo_2003.h5</a> (62 GB)</p></li>
-<li><p>2004: <a href="data/h5data/climo_2004.h5">climo_2004.h5</a> (62 GB)</p></li>
-<li><p>2005: <a href="data/h5data/climo_2005.h5">climo_2005.h5</a> (62 GB)</p></li>
-</ul>
-
-<h3 id="toc_5">Additional Info</h3>
-
-<p><a name="variables"></a></p>
-
-<h4 id="toc_6">Variable Values:</h4>
-
-<p>The variables are the 2nd dimension of the &quot;images&quot; dataset in the HDF5 in the following order:</p>
-
-<p><strong>0</strong>. <em>PRECT</em></p>
-
-<p><strong>1</strong>. <em>PS</em></p>
-
-<p><strong>2</strong>. <em>PSL</em></p>
-
-<p><strong>3</strong>. <em>QREFHT</em></p>
-
-<p><strong>4</strong>. <em>T200</em></p>
-
-<p><strong>5</strong>. <em>T500</em></p>
-
-<p><strong>6</strong>. <em>TMQ</em></p>
-
-<p><strong>7</strong>. <em>TREFHT</em></p>
-
-<p><strong>8</strong>. <em>TS</em></p>
-
-<p><strong>9</strong>. <em>U850</em></p>
-
-<p><strong>10</strong>. <em>UBOT</em></p>
-
-<p><strong>11</strong>. <em>V850</em></p>
-
-<p><strong>12</strong>. <em>VBOT</em></p>
-
-<p><strong>13</strong>. <em>Z1000</em></p>
-
-<p><strong>14</strong>. <em>Z200</em></p>
-
-<p><strong>15</strong>. <em>ZBOT</em></p>
-
-<p>More information as to what each variable means is available <a href="http://www.cesm.ucar.edu/models/cesm1.0/cam/docs/ug5_0/hist_flds_fv_cam5.html">here</a></p>
+<p>@inproceedings{racah2017extremeweather,
+  title={ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events},
+  author={Racah, Evan and Beckham, Christopher and Maharaj, Tegan and Prabhat, Mr and Pal, Chris},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={3404--3415},
+  year={2017}
+}</p>
 
 
 
