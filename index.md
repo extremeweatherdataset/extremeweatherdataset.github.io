@@ -2,9 +2,27 @@
 
 ### About the Data
 
-The data is available as one HDF5 file per year. Each HDF5 file contains two datasets:
+The data is available as one HDF5 file per year, which are formatted like so: “climo\_yyyy.h5”, like “climo_1979.h5”.
 
-#### Images
+ Each HDF5 file contains two datasets:
+  
+*  “images”
+*  “boxes”
+
+Here is a snippet of code to load the datasets with the python library, [h5py](http://docs.h5py.org/en/latest/build.html#python-distributions):
+
+
+```python
+import h5py
+data_path = "./climo_1979.h5"
+h5f = h5py.File(data_path)
+images = h5f["images"] # (1460,16,768,1152) numpy array
+boxes = h5f["boxes"] # (1460,15,5) numpy array
+```
+
+The two variables, "images" and "boxes" are described below:
+
+#### images
 
 ![](./variables.jpg)
 
@@ -13,7 +31,7 @@ The data is available as one HDF5 file per year. Each HDF5 file contains two dat
 *   16 channels in each image corresponding to the [following variables](#variables)
 *   each channel is 768 x 1152 corresponding to one measurement per 25 square km on earth
 
-#### Boxes
+#### boxes
 
 *   a (1460,15,5) array
 *   1460 examples (4 per day, 365 days in the year)
@@ -77,35 +95,67 @@ The variables are the 2nd dimension of the "images" dataset in the HDF5 in the f
 
 **0**. _PRECT_
 
+*	**Total (convective and large-scale) precipitation rate (liq + ice)**
+
 **1**. _PS_
+
+* **Surface Pressure**
 
 **2**. _PSL_
 
+* 	**Sea level pressure**
+
 **3**. _QREFHT_
+
+* **Reference height humidity** 
 
 **4**. _T200_
 
+* **Temperature at 200 mbar pressure surface** 
+
 **5**. _T500_
+
+* **Temperature at 500 mbar pressure surface**
 
 **6**. _TMQ_
 
+* **Total (vertically integrated) precipitatable water**
+
 **7**. _TREFHT_
+
+* **Reference height temperature**
 
 **8**. _TS_
 
+* **Surface temperature (radiative)**
+
 **9**. _U850_
+
+* **Zonal wind at 850 mbar pressure surface**
 
 **10**. _UBOT_
 
+* **Lowest model level zonal wind**
+
 **11**. _V850_
+
+* **Meridional wind at 850 mbar pressure surface**
 
 **12**. _VBOT_
 
-**13**. _Z1000_
+* **Lowest model level meridional wind**
+
+**13**. _Z100_
+
+* **Geopotential Z at 100 mbar pressure surface**
 
 **14**. _Z200_
 
+* **Geopotential Z at 200 mbar pressure surface**
+
 **15**. _ZBOT_
+
+* **Lowest model level height**
 
 More information as to what each variable means is available [here](http://www.cesm.ucar.edu/models/cesm1.0/cam/docs/ug5_0/hist_flds_fv_cam5.html)
 

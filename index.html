@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>ExtremeWeather Dataset</title>
+<title>index</title>
 
 
 <style type="text/css">
@@ -332,9 +332,26 @@ kbd {
 
 <h3 id="toc_1">About the Data</h3>
 
-<p>The data is available as one HDF5 file per year. Each HDF5 file contains two datasets:</p>
+<p>The data is available as one HDF5 file per year, which are formatted like so: “climo_yyyy.h5”, like “climo_1979.h5”.</p>
 
-<h4 id="toc_2">Images</h4>
+<p>Each HDF5 file contains two datasets:</p>
+
+<ul>
+<li> “images”</li>
+<li> “boxes”</li>
+</ul>
+
+<p>Here is a snippet of code to load the datasets with the python library, <a href="http://docs.h5py.org/en/latest/build.html#python-distributions">h5py</a>:</p>
+
+<div><pre><code class="language-python">import h5py
+data_path = &quot;./climo_1979.h5&quot;
+h5f = h5py.File(data_path)
+images = h5f[&quot;images&quot;] # (1460,16,768,1152) numpy array
+boxes = h5f[&quot;boxes&quot;] # (1460,15,5) numpy array</code></pre></div>
+
+<p>The two variables, &quot;images&quot; and &quot;boxes&quot; are described below:</p>
+
+<h4 id="toc_2">images</h4>
 
 <p><img src="./variables.jpg" alt=""></p>
 
@@ -345,7 +362,7 @@ kbd {
 <li>  each channel is 768 x 1152 corresponding to one measurement per 25 square km on earth</li>
 </ul>
 
-<h4 id="toc_3">Boxes</h4>
+<h4 id="toc_3">boxes</h4>
 
 <ul>
 <li>  a (1460,15,5) array</li>
@@ -412,35 +429,99 @@ kbd {
 
 <p><strong>0</strong>. <em>PRECT</em></p>
 
+<ul>
+<li>  <strong>Total (convective and large-scale) precipitation rate (liq + ice)</strong></li>
+</ul>
+
 <p><strong>1</strong>. <em>PS</em></p>
+
+<ul>
+<li><strong>Surface Pressure</strong></li>
+</ul>
 
 <p><strong>2</strong>. <em>PSL</em></p>
 
+<ul>
+<li>  <strong>Sea level pressure</strong></li>
+</ul>
+
 <p><strong>3</strong>. <em>QREFHT</em></p>
+
+<ul>
+<li><strong>Reference height humidity</strong> </li>
+</ul>
 
 <p><strong>4</strong>. <em>T200</em></p>
 
+<ul>
+<li><strong>Temperature at 200 mbar pressure surface</strong> </li>
+</ul>
+
 <p><strong>5</strong>. <em>T500</em></p>
+
+<ul>
+<li><strong>Temperature at 500 mbar pressure surface</strong></li>
+</ul>
 
 <p><strong>6</strong>. <em>TMQ</em></p>
 
+<ul>
+<li><strong>Total (vertically integrated) precipitatable water</strong></li>
+</ul>
+
 <p><strong>7</strong>. <em>TREFHT</em></p>
+
+<ul>
+<li><strong>Reference height temperature</strong></li>
+</ul>
 
 <p><strong>8</strong>. <em>TS</em></p>
 
+<ul>
+<li><strong>Surface temperature (radiative)</strong></li>
+</ul>
+
 <p><strong>9</strong>. <em>U850</em></p>
+
+<ul>
+<li><strong>Zonal wind at 850 mbar pressure surface</strong></li>
+</ul>
 
 <p><strong>10</strong>. <em>UBOT</em></p>
 
+<ul>
+<li><strong>Lowest model level zonal wind</strong></li>
+</ul>
+
 <p><strong>11</strong>. <em>V850</em></p>
+
+<ul>
+<li><strong>Meridional wind at 850 mbar pressure surface</strong></li>
+</ul>
 
 <p><strong>12</strong>. <em>VBOT</em></p>
 
-<p><strong>13</strong>. <em>Z1000</em></p>
+<ul>
+<li><strong>Lowest model level meridional wind</strong></li>
+</ul>
+
+<p><strong>13</strong>. <em>Z100</em></p>
+
+<ul>
+<li><strong>Geopotential Z at 100 mbar pressure surface</strong></li>
+</ul>
 
 <p><strong>14</strong>. <em>Z200</em></p>
 
+<ul>
+<li><strong>Geopotential Z at 200 mbar pressure surface</strong></li>
+</ul>
+
 <p><strong>15</strong>. <em>ZBOT</em></p>
+
+<ul>
+<li><strong>Lowest model level height</strong></li>
+</ul>
 
 <p>More information as to what each variable means is available <a href="http://www.cesm.ucar.edu/models/cesm1.0/cam/docs/ug5_0/hist_flds_fv_cam5.html">here</a></p>
 
@@ -448,7 +529,7 @@ kbd {
 
 <p>To use this data in a paper please cite this paper:</p>
 
-<p><a href="https://papers.nips.cc/paper/6932-extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events">Racah, Evan, et al. "ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events." Advances in Neural Information Processing Systems. 2017.</p>
+<p><a href="https://papers.nips.cc/paper/6932-extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events">ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events</a>, Racah et al., 2017.</p>
 
 <p><a href="./extremeweather-a-large-scale-climate-dataset-for-semi-supervised-detection-localization-and-understanding-of-extreme-weather-events.bib">bibtex link</a></p>
 
