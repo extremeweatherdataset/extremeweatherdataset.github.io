@@ -56,33 +56,9 @@ The two variables, "images" and "boxes" are described below:
 
 <a name="download"></a>
 
-*   1979: [climo_1979.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1979.h5) (62 GB)
-*   1980: [climo_1980.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1980.h5) (62 GB)
-*   1981: [climo_1981.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1981.h5) (62 GB)
-*   1982: [climo_1982.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1982.h5) (62 GB)
-
-*   1984: [climo_1984.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1984.h5) (62 GB)
-*   1985: [climo_1985.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1985.h5) (62 GB)
-*   1986: [climo_1986.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1986.h5) (62 GB)
-*   1987: [climo_1987.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1987.h5) (62 GB)
-*   1988: [climo_1988.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1988.h5) (62 GB)
-*   1989: [climo_1989.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1989.h5) (62 GB)
-*   1990: [climo_1990.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1990.h5) (62 GB)
-*   1991: [climo_1991.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1991.h5) (62 GB)
-*   1992: [climo_1992.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1992.h5) (62 GB)
-*   1993: [climo_1993.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1993.h5) (62 GB)
-*   1994: [climo_1994.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1994.h5) (62 GB)
-*   1995: [climo_1995.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1995.h5) (62 GB)
-*   1996: [climo_1996.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1996.h5) (62 GB)
-*   1997: [climo_1997.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1997.h5) (62 GB)
-*   1998: [climo_1998.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1998.h5) (62 GB)
-
-*   2000: [climo_2000.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2000.h5) (62 GB)
-*   2001: [climo_2001.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2001.h5) (62 GB)
-*   2002: [climo_2002.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2002.h5) (62 GB)
-*   2003: [climo_2003.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2003.h5) (62 GB)
-*   2004: [climo_2004.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2004.h5) (62 GB)
-*   2005: [climo_2005.h5](http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2005.h5) (62 GB)
+* The files are large (62 GB each).  Obtain them from [this Globus endpoint.](https://app.globus.org/file-manager?origin_id=89a33dca-e540-11e9-9bfc-0a19784404f4&origin_path=%2F)
+* You will need a Globus endpoint of your own for the transfer.
+* Alternatively you may use [Globus Connect Personal.](https://www.globus.org/globus-connect-personal)
 
 ### Additional Info
 
