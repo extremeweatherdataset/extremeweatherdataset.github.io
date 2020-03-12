@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>index</title>
+<title>Extreme Weather Dataset</title>
 
 
 <style type="text/css">
@@ -330,6 +330,14 @@ kbd {
 
 <h1 id="toc_0">The ExtremeWeather Dataset</h1>
 
+<h3 id="toc_4">Download</h3>
+
+<p><a name="download"></a></p>
+
+<ul>
+    <li>The files are large (62 GB each).  Obtain them from <a href="http://academictorrents.com/details/c5bf370a90cae548d5a306c1be7d79186b9f60b9">Academic Torrents.</a></li>
+    <li>You will need a torrent client for the transfer.</li>
+</ul>
 <h3 id="toc_1">About the Data</h3>
 
 <p>The data is available as one HDF5 file per year, which are formatted like so: “climo_yyyy.h5”, like “climo_1979.h5”.</p>
@@ -374,7 +382,7 @@ boxes = h5f[&quot;boxes&quot;] # (1460,15,5) numpy array</code></pre></div>
 <li>  4 bounding box coordinates + the class</li>
 <li>  ymin, xmin, ymax, xmax, class</li>
 <li>  y corresponds to the size 768 dimension and the vertical axis when plotted</li>
-<li>  x corresponds to the size 1152 dimension and horizontal a</li>
+<li>  x corresponds to the size 1152 dimension and horizontal when plotted</li>
 <li><p>classes are types of extreme weather events and go from 0 to 3:</p>
 
 <p><strong>0</strong>. Tropical Depression</p>
@@ -387,37 +395,7 @@ boxes = h5f[&quot;boxes&quot;] # (1460,15,5) numpy array</code></pre></div>
 </ul></li>
 </ul>
 
-<h3 id="toc_4">Download</h3>
 
-<p><a name="download"></a></p>
-
-<ul>
-<li>  1979: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1979.h5">climo_1979.h5</a> (62 GB)</li>
-<li>  1980: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1980.h5">climo_1980.h5</a> (62 GB)</li>
-<li>  1981: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1981.h5">climo_1981.h5</a> (62 GB)</li>
-<li><p>1982: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1982.h5">climo_1982.h5</a> (62 GB)</p></li>
-<li><p>1984: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1984.h5">climo_1984.h5</a> (62 GB)</p></li>
-<li><p>1985: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1985.h5">climo_1985.h5</a> (62 GB)</p></li>
-<li><p>1986: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1986.h5">climo_1986.h5</a> (62 GB)</p></li>
-<li><p>1987: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1987.h5">climo_1987.h5</a> (62 GB)</p></li>
-<li><p>1988: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1988.h5">climo_1988.h5</a> (62 GB)</p></li>
-<li><p>1989: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1989.h5">climo_1989.h5</a> (62 GB)</p></li>
-<li><p>1990: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1990.h5">climo_1990.h5</a> (62 GB)</p></li>
-<li><p>1991: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1991.h5">climo_1991.h5</a> (62 GB)</p></li>
-<li><p>1992: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1992.h5">climo_1992.h5</a> (62 GB)</p></li>
-<li><p>1993: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1993.h5">climo_1993.h5</a> (62 GB)</p></li>
-<li><p>1994: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1994.h5">climo_1994.h5</a> (62 GB)</p></li>
-<li><p>1995: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1995.h5">climo_1995.h5</a> (62 GB)</p></li>
-<li><p>1996: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1996.h5">climo_1996.h5</a> (62 GB)</p></li>
-<li><p>1997: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1997.h5">climo_1997.h5</a> (62 GB)</p></li>
-<li><p>1998: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_1998.h5">climo_1998.h5</a> (62 GB)</p></li>
-<li><p>2000: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2000.h5">climo_2000.h5</a> (62 GB)</p></li>
-<li><p>2001: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2001.h5">climo_2001.h5</a> (62 GB)</p></li>
-<li><p>2002: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2002.h5">climo_2002.h5</a> (62 GB)</p></li>
-<li><p>2003: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2003.h5">climo_2003.h5</a> (62 GB)</p></li>
-<li><p>2004: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2004.h5">climo_2004.h5</a> (62 GB)</p></li>
-<li><p>2005: <a href="http://portal.nersc.gov/project/dasrepo/DO_NOT_REMOVE/extremeweather_dataset/h5data/climo_2005.h5">climo_2005.h5</a> (62 GB)</p></li>
-</ul>
 
 <h3 id="toc_5">Additional Info</h3>
 
